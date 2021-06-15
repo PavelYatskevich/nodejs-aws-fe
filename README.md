@@ -3,6 +3,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Store links:
 Bucket link: http://pavelyatskevich-bucket.s3-website-eu-west-1.amazonaws.com/
 Cloudfront link: https://d965ef9teqz9w.cloudfront.net/
+Bucket link with 403: http://pavelyatskevich-bucket-2.s3-website-us-east-1.amazonaws.com/
+Cloudfront link: https://d160g0181luhe0.cloudfront.net/
 
 ## Available Scripts
 

@@ -23,7 +23,7 @@ frameworkVersion: '2'
 provider:
   name: aws
   runtime: nodejs12.x
-
+  lambdaHashingVersion: 20201221
 
 
 
@@ -31,6 +31,8 @@ custom:
   client:
     bucketName: pavelyatskevich-bucket-2 # (see Configuration Parameters below)
     distributionFolder: build
+    indexDocument: index.html
+    manageResources: false
     # [other configuration parameters] (see Configuration Parameters below)
 
   s3Localpath: ${self:custom.client.distributionFolder}/
@@ -64,15 +66,9 @@ plugins:
 #    variable1: value1
 
 # you can add packaging information here
-#package:
-#  patterns:
-#    - '!exclude-me.js'
-#    - '!exclude-me-dir/**'
-#    - include-me.js
-#    - include-me-dir/**
 package:
-  exclude:
-    - node_modules/**
+  patterns:
+    - '!node_modules/**'
 functions:
   hello:
     handler: handler.hello
