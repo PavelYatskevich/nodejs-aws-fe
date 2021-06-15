@@ -1,5 +1,9 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Store links:
+Bucket link: http://pavelyatskevich-bucket.s3-website-eu-west-1.amazonaws.com/
+Cloudfront link: https://d965ef9teqz9w.cloudfront.net/
+
 ## Available Scripts
 
 In the project directory, you can run:  
